@@ -1,7 +1,7 @@
 {
-    "name": "@donmahallem/trapeze-api-types",
+    "name": "@donmahallem/google-fit-api-types",
     "version": "1.4.3",
-    "description": "Api Types and helper for TrapezeApi",
+    "description": "Api Types and helper for Google Fit Api",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "private": false,
@@ -25,7 +25,7 @@
         "test:unit": "npm run test-ci",
         "test:docs": "npm run docs"
     },
-    "homepage": "https://donmahallem.github.io/TrapezeApiTypes/",
+    "homepage": "https://donmahallem.github.io/GoogleFitApiTypes/",
     "author": {
         "name": "donmahallem",
         "email": "donmahallem@users.noreply.github.com",
@@ -33,11 +33,11 @@
     },
     "license": "Apache-2.0",
     "bugs": {
-        "url": "https://github.com/donmahallem/TrapezeApiTypes/issues"
+        "url": "https://github.com/donmahallem/GoogleFitApiTypes/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/donmahallem/TrapezeApiTypes.git"
+        "url": "https://github.com/donmahallem/GoogleFitApiTypes.git"
     },
     "engines": {
         "node": ">=8.0.0"
@@ -63,7 +63,6 @@
         "@types/node": "~12.7.12",
         "@types/sinon": "~7.5.0",
         "chai": "~4.2.0",
-        "highlight.js": "~9.15.10",
         "mocha": "~6.2.1",
         "nodemon": "~1.19.3",
         "nyc": "~14.1.1",
