@@ -62,7 +62,7 @@
             {
                 "match": "Source \\S+",
                 "allow-single-line-comments": true,
-                "default": "Source https://github.com/donmahallem/TrapezeApiTypes",
+                "default": "Source https://github.com/donmahallem/GoogleFitApiTypes",
                 "enforce-trailing-newline": false
             }
         ],
