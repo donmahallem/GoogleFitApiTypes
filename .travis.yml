@@ -1,0 +1,59 @@
+language: node_js
+node_js:
+  - "8"
+  - "10"
+  - "stable"
+env:
+  matrix:
+  - TEST_SUITE=lint
+  - TEST_SUITE=build
+  - TEST_SUITE=unit
+  - TEST_SUITE=docs
+matrix:
+  exclude:
+    - node_js: "8"
+      env: TEST_SUITE=lint
+    - node_js: "8"
+      env: TEST_SUITE=docs
+    - node_js: "8"
+      env: TEST_SUITE=build
+    - node_js: "10"
+      env: TEST_SUITE=lint
+    - node_js: "10"
+      env: TEST_SUITE=docs
+    - node_js: "10"
+      env: TEST_SUITE=build
+cache:
+  directories:
+  - node_modules
+  - "$(npm config get prefix)/node_modules"
+script:
+- npm run test:$TEST_SUITE
+after_success:
+- ./coveralls_upload.sh
+jobs:
+  include:
+  - stage: npm release
+    node_js: 'stable'
+    script: npm run build
+    if: tag IS present
+    deploy:
+      provider: npm
+      skip_cleanup: true
+      email: $npm_email
+      api_key: $npm_api_key
+      on:
+        tags: true
+        repo: donmahallem/TrapezeApiTypes
+  - stage: github pages release
+    node_js: 'stable'
+    script: npm run docs
+    if: branch = master
+    deploy:
+      provider: pages
+      skip-cleanup: true
+      local-dir: docs
+      github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+      keep-history: true
+      on:
+        branch: master

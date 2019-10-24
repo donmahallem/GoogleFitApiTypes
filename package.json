@@ -1,0 +1,108 @@
+{
+    "name": "@donmahallem/google-fit-api-types",
+    "version": "0.0.1",
+    "description": "Api Types and helper for Google Fit Api",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "private": false,
+    "keywords": [
+        "api",
+        "types"
+    ],
+    "scripts": {
+        "test": "mocha",
+        "start": "npm run build:live",
+        "build:live": "nodemon",
+        "build": "tsc",
+        "build:doc": "node ./node_modules/typedoc/bin/typedoc --out ./tt2/ --mode modules --exclude /**/index ./src/",
+        "test-ci_old": "nyc ts-mocha -p tsconfig.json -- --opts mocha.opts",
+        "test-ci": "nyc npm run test",
+        "lint": "tslint -c tslint.json -p tsconfig-lint.json src/**/*.ts",
+        "lint-fix": "tslint --fix -c tslint.json -p tsconfig-lint.json src/**/*.ts",
+        "docs": "typedoc --options typedoc.json",
+        "test:lint": "npm run lint",
+        "test:build": "npm run build",
+        "test:unit": "npm run test-ci",
+        "test:docs": "npm run docs"
+    },
+    "homepage": "https://donmahallem.github.io/GoogleFitApiTypes/",
+    "author": {
+        "name": "donmahallem",
+        "email": "donmahallem@users.noreply.github.com",
+        "url": "https://github.com/donmahallem"
+    },
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/donmahallem/GoogleFitApiTypes/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/donmahallem/GoogleFitApiTypes.git"
+    },
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "lib": [
+            "es2017",
+            "es7",
+            "es6",
+            "dom"
+        ],
+        "declaration": true,
+        "outDir": "./dist/",
+        "baseUrl": "./src/",
+        "strict": true,
+        "esModuleInterop": true
+    },
+    "devDependencies": {
+        "@types/chai": "~4.2.3",
+        "@types/mocha": "~5.2.7",
+        "@types/node": "~12.7.12",
+        "@types/sinon": "~7.5.0",
+        "chai": "~4.2.0",
+        "mocha": "~6.2.1",
+        "nodemon": "~1.19.3",
+        "nyc": "~14.1.1",
+        "sinon": "~7.5.0",
+        "ts-node": "~8.4.1",
+        "tslint": "~5.20.0",
+        "typedoc": "~0.15.0",
+        "typescript": "~3.6.4"
+    },
+    "nyc": {
+        "include": [
+            "src/*.ts",
+            "src/**/*.ts"
+        ],
+        "exclude": [
+            "typings",
+            "src/**/*.spec.ts",
+            "**/*.d.ts"
+        ],
+        "extension": [
+            ".ts"
+        ],
+        "require": [
+            "ts-node/register"
+        ],
+        "reporter": [
+            "json",
+            "html",
+            "text-summary",
+            "lcov"
+        ],
+        "sourceMap": true,
+        "instrument": true,
+        "all": true
+    },
+    "dependencies": {
+        "jsonschema": "~1.2.4"
+    },
+    "files": [
+        "dist/*",
+        "src/*"
+    ]
+}
