@@ -2,8 +2,10 @@
  * Source https://github.com/donmahallem/GoogleFitApiTypes
  */
 
+import { FitDataTypes } from "./fit-data-types";
+
 export interface IDatasetPoint {
-    dataTypeName: "com.google.weight.summary" | string;
+    dataTypeName: FitDataTypes;
     endTimeNanos: string;
     originDataSourceId: string;
     startTimeNanos: string;
