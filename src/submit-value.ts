@@ -3,9 +3,10 @@
  */
 
 import { IFpVal, IIntVal } from "./values";
+import { FitDataTypeName } from "./fit-data-type-name";
 
 export interface ISubmitValue {
-    dataTypeName: string;
+    dataTypeName: FitDataTypeName;
     endTimeNanos: number;
     startTimeNanos: number;
     originDataSourceId: string;

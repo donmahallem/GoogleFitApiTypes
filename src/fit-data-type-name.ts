@@ -1,4 +1,4 @@
-export type FitDataTypes = "com.google.activity.sample" | "com.google.activity.segment" |
+export type FitDataTypeName = "com.google.activity.sample" | "com.google.activity.segment" |
     "com.google.calories.consumed" |
     "com.google.calories.expended" |
     "com.google.cycling.pedaling.cadence" |
