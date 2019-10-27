@@ -1,3 +1,7 @@
+/*!
+ * Source https://github.com/donmahallem/GoogleFitApiTypes
+ */
+
 export type FitDataTypeName = "com.google.activity.sample" | "com.google.activity.segment" |
     "com.google.calories.consumed" |
     "com.google.calories.expended" |
