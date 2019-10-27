@@ -12,3 +12,6 @@ export * from "./submit-to-dataset-response";
 export * from "./submit-value";
 export * from "./values";
 export * from "./list-sessions-response";
+export * from "./activity-types";
+export * from "./data-source-id";
+export * from "./fit-data-type-name";
