@@ -44,7 +44,7 @@ jobs:
       api_key: $npm_api_key
       on:
         tags: true
-        repo: donmahallem/TrapezeApiTypes
+        repo: donmahallem/GoogleFitApiTypes
   - stage: github pages release
     node_js: 'stable'
     script: npm run docs
