@@ -3,9 +3,10 @@
  */
 
 import { DataSourceId } from "./data-source-id";
+import { FitDataTypeName } from "./fit-data-type-name";
 
 export interface IDatasetPoint {
-    dataTypeName: "com.google.weight.summary" | string;
+    dataTypeName: FitDataTypeName;
     endTimeNanos: string;
     originDataSourceId: DataSourceId;
     startTimeNanos: string;
