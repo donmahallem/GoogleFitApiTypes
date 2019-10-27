@@ -2,8 +2,10 @@
  * Source https://github.com/donmahallem/GoogleFitApiTypes
  */
 
+import { ActivityTypes } from "./activity-types";
+
 export interface IFitSession {
-    activityType: number;
+    activityType: ActivityTypes;
     application: {
         packageName: string;
     };
