@@ -1,3 +1,7 @@
+/*!
+ * Source https://github.com/donmahallem/GoogleFitApiTypes
+ */
+
 export enum ActivityTypes {
     Aerobics = 9,
     Archery = 119,
@@ -118,5 +122,5 @@ export enum ActivityTypes {
     Wheelchair = 98,
     Windsurfing = 99,
     Yoga = 100,
-    Zumba = 101
-};
+    Zumba = 101,
+}
