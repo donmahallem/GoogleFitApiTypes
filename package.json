@@ -1,6 +1,6 @@
 {
     "name": "@donmahallem/google-fit-api-types",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Api Types and helper for Google Fit Api",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
