@@ -1,62 +1,31 @@
 {
-    "name": "@donmahallem/google-fit-api-types",
-    "version": "0.0.2",
-    "description": "Api Types and helper for Google Fit Api",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "private": false,
-    "keywords": [
-        "api",
-        "types"
-    ],
-    "scripts": {
-        "test": "mocha",
-        "start": "npm run build:live",
-        "build:live": "nodemon",
-        "build": "tsc",
-        "build:doc": "node ./node_modules/typedoc/bin/typedoc --out ./tt2/ --mode modules --exclude /**/index ./src/",
-        "test-ci_old": "nyc ts-mocha -p tsconfig.json -- --opts mocha.opts",
-        "test-ci": "nyc npm run test",
-        "lint": "tslint -c tslint.json -p tsconfig-lint.json src/**/*.ts",
-        "lint-fix": "tslint --fix -c tslint.json -p tsconfig-lint.json src/**/*.ts",
-        "docs": "typedoc --options typedoc.json",
-        "test:lint": "npm run lint",
-        "test:build": "npm run build",
-        "test:unit": "npm run test-ci",
-        "test:docs": "npm run docs"
-    },
-    "homepage": "https://donmahallem.github.io/GoogleFitApiTypes/",
     "author": {
-        "name": "donmahallem",
         "email": "donmahallem@users.noreply.github.com",
+        "name": "donmahallem",
         "url": "https://github.com/donmahallem"
     },
-    "license": "Apache-2.0",
     "bugs": {
         "url": "https://github.com/donmahallem/GoogleFitApiTypes/issues"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/donmahallem/GoogleFitApiTypes.git"
-    },
-    "engines": {
-        "node": ">=8.0.0"
-    },
     "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "lib": [
-            "es2017",
-            "es7",
-            "es6",
-            "dom"
-        ],
-        "declaration": true,
-        "outDir": "./dist/",
         "baseUrl": "./src/",
+        "declaration": true,
+        "esModuleInterop": true,
+        "lib": [
+            "dom",
+            "es2017",
+            "es6",
+            "es7"
+        ],
+        "module": "commonjs",
+        "outDir": "./dist/",
         "strict": true,
-        "esModuleInterop": true
+        "target": "es5"
     },
+    "dependencies": {
+        "jsonschema": "~1.2.4"
+    },
+    "description": "Api Types and helper for Google Fit Api",
     "devDependencies": {
         "@types/chai": "~4.2.3",
         "@types/mocha": "~5.2.7",
@@ -72,37 +41,71 @@
         "typedoc": "~0.15.0",
         "typescript": "~3.6.4"
     },
-    "nyc": {
-        "include": [
-            "src/*.ts",
-            "src/**/*.ts"
-        ],
-        "exclude": [
-            "typings",
-            "src/**/*.spec.ts",
-            "**/*.d.ts"
-        ],
-        "extension": [
-            ".ts"
-        ],
-        "require": [
-            "ts-node/register"
-        ],
-        "reporter": [
-            "json",
-            "html",
-            "text-summary",
-            "lcov"
-        ],
-        "sourceMap": true,
-        "instrument": true,
-        "all": true
-    },
-    "dependencies": {
-        "jsonschema": "~1.2.4"
+    "engines": {
+        "node": ">=8.0.0"
     },
     "files": [
         "dist/*",
         "src/*"
-    ]
+    ],
+    "homepage": "https://donmahallem.github.io/GoogleFitApiTypes/",
+    "keywords": [
+        "api",
+        "types"
+    ],
+    "license": "Apache-2.0",
+    "main": "dist/index.js",
+    "name": "@donmahallem/google-fit-api-types",
+    "nyc": {
+        "all": true,
+        "exclude": [
+            "**/*.d.ts",
+            "src/**/*.spec.ts",
+            "typings"
+        ],
+        "extension": [
+            ".ts"
+        ],
+        "include": [
+            "src/**/*.ts",
+            "src/*.ts"
+        ],
+        "instrument": true,
+        "reporter": [
+            "html",
+            "json",
+            "lcov",
+            "text-summary"
+        ],
+        "require": [
+            "ts-node/register"
+        ],
+        "sourceMap": true
+    },
+    "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/donmahallem/GoogleFitApiTypes.git"
+    },
+    "scripts": {
+        "build": "tsc",
+        "build:doc": "node ./node_modules/typedoc/bin/typedoc --out ./tt2/ --mode modules --exclude /**/index ./src/",
+        "build:live": "nodemon",
+        "docs": "typedoc --options typedoc.json",
+        "lint": "tslint -c tslint.json -p tsconfig-lint.json src/**/*.ts",
+        "lint-fix": "tslint --fix -c tslint.json -p tsconfig-lint.json src/**/*.ts",
+        "start": "npm run build:live",
+        "test": "mocha",
+        "test-ci": "nyc npm run test",
+        "test-ci_old": "nyc ts-mocha -p tsconfig.json -- --opts mocha.opts",
+        "test:build": "npm run build",
+        "test:docs": "npm run docs",
+        "test:lint": "npm run lint",
+        "test:unit": "npm run test-ci"
+    },
+    "types": "dist/index.d.ts",
+    "version": "0.0.3"
 }
