@@ -25,6 +25,9 @@
         "test:unit": "npm run test-ci",
         "test:docs": "npm run docs"
     },
+    "publishConfig": {
+        "access": "public"
+    },
     "homepage": "https://donmahallem.github.io/GoogleFitApiTypes/",
     "author": {
         "name": "donmahallem",
