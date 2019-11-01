@@ -29,7 +29,7 @@
     "devDependencies": {
         "@types/chai": "~4.2.3",
         "@types/mocha": "~5.2.7",
-        "@types/node": "~12.11.7",
+        "@types/node": "~12.12.0",
         "@types/sinon": "~7.5.0",
         "chai": "~4.2.0",
         "mocha": "~6.2.1",
@@ -107,5 +107,5 @@
         "test:unit": "npm run test-ci"
     },
     "types": "dist/index.d.ts",
-    "version": "0.0.3"
+    "version": "0.0.4"
 }
