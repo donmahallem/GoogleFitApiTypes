@@ -107,5 +107,5 @@
         "test:unit": "npm run test-ci"
     },
     "types": "dist/index.d.ts",
-    "version": "0.0.4"
+    "version": "0.0.5"
 }
