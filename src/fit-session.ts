@@ -7,7 +7,10 @@ import { ActivityTypes } from "./activity-types";
 export interface IFitSession {
     activityType: ActivityTypes;
     application: {
+        detailsUrl: string;
+        name: string;
         packageName: string;
+        version: string;
     };
     packageName: string;
     description: string;
