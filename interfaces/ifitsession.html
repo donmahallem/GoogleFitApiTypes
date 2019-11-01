@@ -66,6 +66,14 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Full Documentation
+						<a href="https://developers.google.com/fit/rest/v1/reference/users/sessions/list">https://developers.google.com/fit/rest/v1/reference/users/sessions/list</a></p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -81,14 +89,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitsession.html#activetimemillis" class="tsd-kind-icon">active<wbr>Time<wbr>Millis</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitsession.html#activitytype" class="tsd-kind-icon">activity<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitsession.html#application" class="tsd-kind-icon">application</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitsession.html#description" class="tsd-kind-icon">description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitsession.html#endtimemillis" class="tsd-kind-icon">end<wbr>Time<wbr>Millis</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitsession.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitsession.html#modifiedtimemillis" class="tsd-kind-icon">modified<wbr>Time<wbr>Millis</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitsession.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitsession.html#packagename-1" class="tsd-kind-icon">package<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitsession.html#name-1" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitsession.html#starttimemillis" class="tsd-kind-icon">start<wbr>Time<wbr>Millis</a></li>
 							</ul>
 						</section>
@@ -98,12 +106,28 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="activetimemillis" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> active<wbr>Time<wbr>Millis</h3>
+					<div class="tsd-signature tsd-kind-icon">active<wbr>Time<wbr>Millis<span class="tsd-signature-symbol">:</span> <a href="../globals.html#long" class="tsd-signature-type">Long</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/fb11fa6/src/fit-session.ts#L17">fit-session.ts:17</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Long number
+							Timestamp in miliseconds since epoch</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="activitytype" class="tsd-anchor"></a>
 					<h3>activity<wbr>Type</h3>
 					<div class="tsd-signature tsd-kind-icon">activity<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/activitytypes.html" class="tsd-signature-type">ActivityTypes</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/a1698bf/src/fit-session.ts#L8">fit-session.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/fb11fa6/src/fit-session.ts#L18">fit-session.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -113,14 +137,23 @@
 					<div class="tsd-signature tsd-kind-icon">application<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/a1698bf/src/fit-session.ts#L9">fit-session.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/fb11fa6/src/fit-session.ts#L19">fit-session.ts:19</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
+								<h5>details<wbr>Url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
 								<h5>package<wbr>Name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
 					</div>
@@ -131,19 +164,30 @@
 					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/a1698bf/src/fit-session.ts#L13">fit-session.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/fb11fa6/src/fit-session.ts#L28">fit-session.ts:28</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A description for this session.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="endtimemillis" class="tsd-anchor"></a>
 					<h3>end<wbr>Time<wbr>Millis</h3>
-					<div class="tsd-signature tsd-kind-icon">end<wbr>Time<wbr>Millis<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">end<wbr>Time<wbr>Millis<span class="tsd-signature-symbol">:</span> <a href="../globals.html#long" class="tsd-signature-type">Long</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/a1698bf/src/fit-session.ts#L14">fit-session.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/fb11fa6/src/fit-session.ts#L33">fit-session.ts:33</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Long number
+							Timestamp in miliseconds since epoch</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="id" class="tsd-anchor"></a>
@@ -151,49 +195,56 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/a1698bf/src/fit-session.ts#L15">fit-session.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/fb11fa6/src/fit-session.ts#L34">fit-session.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="modifiedtimemillis" class="tsd-anchor"></a>
-					<h3>modified<wbr>Time<wbr>Millis</h3>
-					<div class="tsd-signature tsd-kind-icon">modified<wbr>Time<wbr>Millis<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> modified<wbr>Time<wbr>Millis</h3>
+					<div class="tsd-signature tsd-kind-icon">modified<wbr>Time<wbr>Millis<span class="tsd-signature-symbol">:</span> <a href="../globals.html#long" class="tsd-signature-type">Long</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/a1698bf/src/fit-session.ts#L16">fit-session.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/fb11fa6/src/fit-session.ts#L39">fit-session.ts:39</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Long number
+							Timestamp in miliseconds since epoch</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
+					<a name="name-1" class="tsd-anchor"></a>
 					<h3>name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/a1698bf/src/fit-session.ts#L17">fit-session.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/fb11fa6/src/fit-session.ts#L43">fit-session.ts:43</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="packagename-1" class="tsd-anchor"></a>
-					<h3>package<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">package<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/a1698bf/src/fit-session.ts#L12">fit-session.ts:12</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A human readable name of the session.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="starttimemillis" class="tsd-anchor"></a>
 					<h3>start<wbr>Time<wbr>Millis</h3>
-					<div class="tsd-signature tsd-kind-icon">start<wbr>Time<wbr>Millis<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">start<wbr>Time<wbr>Millis<span class="tsd-signature-symbol">:</span> <a href="../globals.html#long" class="tsd-signature-type">Long</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/a1698bf/src/fit-session.ts#L18">fit-session.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/fb11fa6/src/fit-session.ts#L48">fit-session.ts:48</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Long number
+							Timestamp in miliseconds since epoch</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -228,6 +279,9 @@
 						<a href="ifitsession.html" class="tsd-kind-icon">IFit<wbr>Session</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ifitsession.html#activetimemillis" class="tsd-kind-icon">active<wbr>Time<wbr>Millis</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="ifitsession.html#activitytype" class="tsd-kind-icon">activity<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -246,10 +300,7 @@
 								<a href="ifitsession.html#modifiedtimemillis" class="tsd-kind-icon">modified<wbr>Time<wbr>Millis</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ifitsession.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ifitsession.html#packagename-1" class="tsd-kind-icon">package<wbr>Name</a>
+								<a href="ifitsession.html#name-1" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="ifitsession.html#starttimemillis" class="tsd-kind-icon">start<wbr>Time<wbr>Millis</a>
@@ -281,6 +332,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#fitdatatypename" class="tsd-kind-icon">Fit<wbr>Data<wbr>Type<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#long" class="tsd-kind-icon">Long</a>
 					</li>
 				</ul>
 			</nav>
