@@ -19,13 +19,13 @@ export interface IFitSession {
     application: {
         detailsUrl: string;
         name: string;
-        packageName: string;
+        packageName?: string;
         version: string;
     };
     /**
      * A description for this session.
      */
-    description: string;
+    description?: string;
     /**
      * Long number
      * Timestamp in miliseconds since epoch
