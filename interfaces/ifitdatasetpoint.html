@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IBucketResponse | @donmahallem/google-fit-api-types</title>
+	<title>IFitDatasetPoint | @donmahallem/google-fit-api-types</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="ibucketresponse.html">IBucketResponse</a>
+					<a href="ifitdatasetpoint.html">IFitDatasetPoint</a>
 				</li>
 			</ul>
-			<h1>Interface IBucketResponse</h1>
+			<h1>Interface IFitDatasetPoint</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IBucketResponse</span>
+						<span class="target">IFitDatasetPoint</span>
 					</li>
 				</ul>
 			</section>
@@ -81,7 +81,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibucketresponse.html#bucket" class="tsd-kind-icon">bucket</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitdatasetpoint.html#computationtimemillis" class="tsd-kind-icon">computation<wbr>Time<wbr>Millis</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitdatasetpoint.html#datatypename" class="tsd-kind-icon">data<wbr>Type<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitdatasetpoint.html#endtimenanos" class="tsd-kind-icon">end<wbr>Time<wbr>Nanos</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitdatasetpoint.html#modifiedtimemillis" class="tsd-kind-icon">modified<wbr>Time<wbr>Millis</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitdatasetpoint.html#origindatasourceid" class="tsd-kind-icon">origin<wbr>Data<wbr>Source<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitdatasetpoint.html#rawtimestampnanos" class="tsd-kind-icon">raw<wbr>Timestamp<wbr>Nanos</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitdatasetpoint.html#starttimenanos" class="tsd-kind-icon">start<wbr>Time<wbr>Nanos</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitdatasetpoint.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
 						</section>
 					</div>
@@ -90,12 +97,87 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="bucket" class="tsd-anchor"></a>
-					<h3>bucket</h3>
-					<div class="tsd-signature tsd-kind-icon">bucket<span class="tsd-signature-symbol">:</span> <a href="ibucket.html" class="tsd-signature-type">IBucket</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="computationtimemillis" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> computation<wbr>Time<wbr>Millis</h3>
+					<div class="tsd-signature tsd-kind-icon">computation<wbr>Time<wbr>Millis<span class="tsd-signature-symbol">:</span> <a href="../globals.html#long" class="tsd-signature-type">Long</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/33f0ed3/src/bucket-response.ts#L8">bucket-response.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/bb4f24b/src/fit-dataset-point.ts#L21">fit-dataset-point.ts:21</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Don&#39;t use. Gets ignored</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="datatypename" class="tsd-anchor"></a>
+					<h3>data<wbr>Type<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">data<wbr>Type<wbr>Name<span class="tsd-signature-symbol">:</span> <a href="../globals.html#fitdatatypename" class="tsd-signature-type">FitDataTypeName</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/bb4f24b/src/fit-dataset-point.ts#L11">fit-dataset-point.ts:11</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="endtimenanos" class="tsd-anchor"></a>
+					<h3>end<wbr>Time<wbr>Nanos</h3>
+					<div class="tsd-signature tsd-kind-icon">end<wbr>Time<wbr>Nanos<span class="tsd-signature-symbol">:</span> <a href="../globals.html#long" class="tsd-signature-type">Long</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/bb4f24b/src/fit-dataset-point.ts#L12">fit-dataset-point.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="modifiedtimemillis" class="tsd-anchor"></a>
+					<h3>modified<wbr>Time<wbr>Millis</h3>
+					<div class="tsd-signature tsd-kind-icon">modified<wbr>Time<wbr>Millis<span class="tsd-signature-symbol">:</span> <a href="../globals.html#long" class="tsd-signature-type">Long</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/bb4f24b/src/fit-dataset-point.ts#L16">fit-dataset-point.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="origindatasourceid" class="tsd-anchor"></a>
+					<h3>origin<wbr>Data<wbr>Source<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">origin<wbr>Data<wbr>Source<wbr>Id<span class="tsd-signature-symbol">:</span> <a href="../globals.html#fitdatasourceid" class="tsd-signature-type">FitDataSourceId</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/bb4f24b/src/fit-dataset-point.ts#L13">fit-dataset-point.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="rawtimestampnanos" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> raw<wbr>Timestamp<wbr>Nanos</h3>
+					<div class="tsd-signature tsd-kind-icon">raw<wbr>Timestamp<wbr>Nanos<span class="tsd-signature-symbol">:</span> <a href="../globals.html#long" class="tsd-signature-type">Long</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/bb4f24b/src/fit-dataset-point.ts#L17">fit-dataset-point.ts:17</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="starttimenanos" class="tsd-anchor"></a>
+					<h3>start<wbr>Time<wbr>Nanos</h3>
+					<div class="tsd-signature tsd-kind-icon">start<wbr>Time<wbr>Nanos<span class="tsd-signature-symbol">:</span> <a href="../globals.html#long" class="tsd-signature-type">Long</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/bb4f24b/src/fit-dataset-point.ts#L14">fit-dataset-point.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="value" class="tsd-anchor"></a>
+					<h3>value</h3>
+					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <a href="../globals.html#fitdatasetpointvalue" class="tsd-signature-type">FitDatasetPointValue</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/bb4f24b/src/fit-dataset-point.ts#L15">fit-dataset-point.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -112,31 +194,61 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
-						<a href="../enums/activitytypes.html" class="tsd-kind-icon">Activity<wbr>Types</a>
+						<a href="../enums/fitactivitytypes.html" class="tsd-kind-icon">Fit<wbr>Activity<wbr>Types</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="ibaseval.html" class="tsd-kind-icon">IBase<wbr>Val</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="ibucket.html" class="tsd-kind-icon">IBucket</a>
+						<a href="ifitbucket.html" class="tsd-kind-icon">IFit<wbr>Bucket</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ifitbucketresponse.html" class="tsd-kind-icon">IFit<wbr>Bucket<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ifitdatasource.html" class="tsd-kind-icon">IFit<wbr>Data<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ifitdataset.html" class="tsd-kind-icon">IFit<wbr>Dataset</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="ibucketresponse.html" class="tsd-kind-icon">IBucket<wbr>Response</a>
+						<a href="ifitdatasetpoint.html" class="tsd-kind-icon">IFit<wbr>Dataset<wbr>Point</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ibucketresponse.html#bucket" class="tsd-kind-icon">bucket</a>
+								<a href="ifitdatasetpoint.html#computationtimemillis" class="tsd-kind-icon">computation<wbr>Time<wbr>Millis</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ifitdatasetpoint.html#datatypename" class="tsd-kind-icon">data<wbr>Type<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ifitdatasetpoint.html#endtimenanos" class="tsd-kind-icon">end<wbr>Time<wbr>Nanos</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ifitdatasetpoint.html#modifiedtimemillis" class="tsd-kind-icon">modified<wbr>Time<wbr>Millis</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ifitdatasetpoint.html#origindatasourceid" class="tsd-kind-icon">origin<wbr>Data<wbr>Source<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ifitdatasetpoint.html#rawtimestampnanos" class="tsd-kind-icon">raw<wbr>Timestamp<wbr>Nanos</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ifitdatasetpoint.html#starttimenanos" class="tsd-kind-icon">start<wbr>Time<wbr>Nanos</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ifitdatasetpoint.html#value" class="tsd-kind-icon">value</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface">
-						<a href="idataset.html" class="tsd-kind-icon">IDataset</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="idatasetpoint.html" class="tsd-kind-icon">IDataset<wbr>Point</a>
-					</li>
-					<li class=" tsd-kind-interface">
 						<a href="ifitsession.html" class="tsd-kind-icon">IFit<wbr>Session</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ifitsessionlistresponse.html" class="tsd-kind-icon">IFit<wbr>Session<wbr>List<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="ifpval.html" class="tsd-kind-icon">IFp<wbr>Val</a>
@@ -145,7 +257,7 @@
 						<a href="iintval.html" class="tsd-kind-icon">IInt<wbr>Val</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="ilistsessionsresponse.html" class="tsd-kind-icon">IList<wbr>Sessions<wbr>Response</a>
+						<a href="istringval.html" class="tsd-kind-icon">IString<wbr>Val</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="isubmittodatasetbody.html" class="tsd-kind-icon">ISubmit<wbr>ToDataset<wbr>Body</a>
@@ -157,10 +269,13 @@
 						<a href="isubmitvalue.html" class="tsd-kind-icon">ISubmit<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="../globals.html#datasourceid" class="tsd-kind-icon">Data<wbr>Source<wbr>Id</a>
+						<a href="../globals.html#fitdatasourceid" class="tsd-kind-icon">Fit<wbr>Data<wbr>Source<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#fitdatatypename" class="tsd-kind-icon">Fit<wbr>Data<wbr>Type<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#fitdatasetpointvalue" class="tsd-kind-icon">Fit<wbr>Dataset<wbr>Point<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="../globals.html#long" class="tsd-kind-icon">Long</a>

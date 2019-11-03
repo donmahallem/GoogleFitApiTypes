@@ -70,20 +70,23 @@
 						<section class="tsd-index-section ">
 							<h3>Enumerations</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum"><a href="enums/activitytypes.html" class="tsd-kind-icon">Activity<wbr>Types</a></li>
+								<li class="tsd-kind-enum"><a href="enums/fitactivitytypes.html" class="tsd-kind-icon">Fit<wbr>Activity<wbr>Types</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface"><a href="interfaces/ibucket.html" class="tsd-kind-icon">IBucket</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/ibucketresponse.html" class="tsd-kind-icon">IBucket<wbr>Response</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/idataset.html" class="tsd-kind-icon">IDataset</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/idatasetpoint.html" class="tsd-kind-icon">IDataset<wbr>Point</a></li>
+								<li class="tsd-kind-interface tsd-is-not-exported"><a href="interfaces/ibaseval.html" class="tsd-kind-icon">IBase<wbr>Val</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ifitbucket.html" class="tsd-kind-icon">IFit<wbr>Bucket</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ifitbucketresponse.html" class="tsd-kind-icon">IFit<wbr>Bucket<wbr>Response</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ifitdatasource.html" class="tsd-kind-icon">IFit<wbr>Data<wbr>Source</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ifitdataset.html" class="tsd-kind-icon">IFit<wbr>Dataset</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ifitdatasetpoint.html" class="tsd-kind-icon">IFit<wbr>Dataset<wbr>Point</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ifitsession.html" class="tsd-kind-icon">IFit<wbr>Session</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ifitsessionlistresponse.html" class="tsd-kind-icon">IFit<wbr>Session<wbr>List<wbr>Response</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ifpval.html" class="tsd-kind-icon">IFp<wbr>Val</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/iintval.html" class="tsd-kind-icon">IInt<wbr>Val</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/ilistsessionsresponse.html" class="tsd-kind-icon">IList<wbr>Sessions<wbr>Response</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/istringval.html" class="tsd-kind-icon">IString<wbr>Val</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/isubmittodatasetbody.html" class="tsd-kind-icon">ISubmit<wbr>ToDataset<wbr>Body</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/isubmittodatasetresponse.html" class="tsd-kind-icon">ISubmit<wbr>ToDataset<wbr>Response</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/isubmitvalue.html" class="tsd-kind-icon">ISubmit<wbr>Value</a></li>
@@ -92,8 +95,9 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias"><a href="globals.html#datasourceid" class="tsd-kind-icon">Data<wbr>Source<wbr>Id</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#fitdatasourceid" class="tsd-kind-icon">Fit<wbr>Data<wbr>Source<wbr>Id</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#fitdatatypename" class="tsd-kind-icon">Fit<wbr>Data<wbr>Type<wbr>Name</a></li>
+								<li class="tsd-kind-type-alias"><a href="globals.html#fitdatasetpointvalue" class="tsd-kind-icon">Fit<wbr>Dataset<wbr>Point<wbr>Value</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#long" class="tsd-kind-icon">Long</a></li>
 							</ul>
 						</section>
@@ -103,12 +107,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="datasourceid" class="tsd-anchor"></a>
-					<h3>Data<wbr>Source<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">Data<wbr>Source<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="fitdatasourceid" class="tsd-anchor"></a>
+					<h3>Fit<wbr>Data<wbr>Source<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">Fit<wbr>Data<wbr>Source<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/33f0ed3/src/data-source-id.ts#L5">data-source-id.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/bb4f24b/src/fit-data-source-id.ts#L5">fit-data-source-id.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -118,7 +122,17 @@
 					<div class="tsd-signature tsd-kind-icon">Fit<wbr>Data<wbr>Type<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"com.google.activity.sample"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.activity.segment"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.calories.consumed"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.calories.expended"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.cycling.pedaling.cadence"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.cycling.wheel_revolution.rpm"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.distance.delta"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.heart_rate.bpm"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.height"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.nutrition"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.power.sample"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.speed"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.step_count.cadence"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.step_count.delta"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.weight"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.activity.exercise"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.activity.summary"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.heart_rate.summary"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.nutrition.summary"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.power.summary"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.speed.summary"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"com.google.weight.summary"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/33f0ed3/src/fit-data-type-name.ts#L5">fit-data-type-name.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/bb4f24b/src/fit-data-type-name.ts#L5">fit-data-type-name.ts:5</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="fitdatasetpointvalue" class="tsd-anchor"></a>
+					<h3>Fit<wbr>Dataset<wbr>Point<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">Fit<wbr>Dataset<wbr>Point<wbr>Value<span class="tsd-signature-symbol">:</span> <a href="interfaces/ifpval.html" class="tsd-signature-type">IFpVal</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/iintval.html" class="tsd-signature-type">IIntVal</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/istringval.html" class="tsd-signature-type">IStringVal</a><span class="tsd-signature-symbol"> &amp; </span><a href="interfaces/ibaseval.html" class="tsd-signature-type">IBaseVal</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/bb4f24b/src/values.ts#L24">values.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -128,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">Long<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/33f0ed3/src/long.ts#L5">long.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/bb4f24b/src/long.ts#L5">long.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -145,22 +159,31 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
-						<a href="enums/activitytypes.html" class="tsd-kind-icon">Activity<wbr>Types</a>
+						<a href="enums/fitactivitytypes.html" class="tsd-kind-icon">Fit<wbr>Activity<wbr>Types</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="interfaces/ibaseval.html" class="tsd-kind-icon">IBase<wbr>Val</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/ibucket.html" class="tsd-kind-icon">IBucket</a>
+						<a href="interfaces/ifitbucket.html" class="tsd-kind-icon">IFit<wbr>Bucket</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/ibucketresponse.html" class="tsd-kind-icon">IBucket<wbr>Response</a>
+						<a href="interfaces/ifitbucketresponse.html" class="tsd-kind-icon">IFit<wbr>Bucket<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/idataset.html" class="tsd-kind-icon">IDataset</a>
+						<a href="interfaces/ifitdatasource.html" class="tsd-kind-icon">IFit<wbr>Data<wbr>Source</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/idatasetpoint.html" class="tsd-kind-icon">IDataset<wbr>Point</a>
+						<a href="interfaces/ifitdataset.html" class="tsd-kind-icon">IFit<wbr>Dataset</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ifitdatasetpoint.html" class="tsd-kind-icon">IFit<wbr>Dataset<wbr>Point</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/ifitsession.html" class="tsd-kind-icon">IFit<wbr>Session</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ifitsessionlistresponse.html" class="tsd-kind-icon">IFit<wbr>Session<wbr>List<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/ifpval.html" class="tsd-kind-icon">IFp<wbr>Val</a>
@@ -169,7 +192,7 @@
 						<a href="interfaces/iintval.html" class="tsd-kind-icon">IInt<wbr>Val</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/ilistsessionsresponse.html" class="tsd-kind-icon">IList<wbr>Sessions<wbr>Response</a>
+						<a href="interfaces/istringval.html" class="tsd-kind-icon">IString<wbr>Val</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/isubmittodatasetbody.html" class="tsd-kind-icon">ISubmit<wbr>ToDataset<wbr>Body</a>
@@ -181,10 +204,13 @@
 						<a href="interfaces/isubmitvalue.html" class="tsd-kind-icon">ISubmit<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#datasourceid" class="tsd-kind-icon">Data<wbr>Source<wbr>Id</a>
+						<a href="globals.html#fitdatasourceid" class="tsd-kind-icon">Fit<wbr>Data<wbr>Source<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#fitdatatypename" class="tsd-kind-icon">Fit<wbr>Data<wbr>Type<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#fitdatasetpointvalue" class="tsd-kind-icon">Fit<wbr>Dataset<wbr>Point<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#long" class="tsd-kind-icon">Long</a>
