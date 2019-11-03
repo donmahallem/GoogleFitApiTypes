@@ -7,10 +7,16 @@ import { FitDataTypeName } from "./fit-data-type-name";
 import { Long } from "./long";
 import { FitDatasetPointValue } from "./values";
 
-export interface ISubmitValue {
+export interface IFitDatasetPoint {
     dataTypeName: FitDataTypeName;
     endTimeNanos: Long;
-    startTimeNanos: Long;
     originDataSourceId: FitDataSourceId;
-    value: FitDatasetPointValue;
+    startTimeNanos: Long;
+    value: FitDatasetPointValue[];
+    modifiedTimeMillis: Long;
+    rawTimestampNanos?: Long;
+    /**
+     * Don't use. Gets ignored
+     */
+    computationTimeMillis?: Long;
 }
