@@ -4,7 +4,7 @@
 
 import { IFitSession } from "./fit-session";
 
-export interface IListSessionsResponse {
+export interface IFitSessionListResponse {
     session: IFitSession[];
     deletedSession?: IFitSession[];
     nextPageToken?: string;

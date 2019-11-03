@@ -2,7 +2,7 @@
  * Source https://github.com/donmahallem/GoogleFitApiTypes
  */
 
-import { ActivityTypes } from "./activity-types";
+import { FitActivityTypes } from "./fit-activity-types";
 import { Long } from "./long";
 
 /**
@@ -15,7 +15,7 @@ export interface IFitSession {
      * Timestamp in miliseconds since epoch
      */
     activeTimeMillis?: Long;
-    activityType: ActivityTypes;
+    activityType: FitActivityTypes;
     application: {
         detailsUrl: string;
         name: string;
