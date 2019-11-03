@@ -2,10 +2,10 @@
  * Source https://github.com/donmahallem/GoogleFitApiTypes
  */
 
-import { IDataset } from "./dataset";
+import { IFitDataset } from "./fit-dataset";
 
-export interface IBucket {
+export interface IFitBucket {
     endTimeMillis: string;
     startTimeMillis: string;
-    dataset: IDataset[];
+    dataset: IFitDataset[];
 }
