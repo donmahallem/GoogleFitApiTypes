@@ -15,3 +15,4 @@ export * from "./list-sessions-response";
 export * from "./fit-activity-types";
 export * from "./fit-data-source-id";
 export * from "./fit-data-type-name";
+export * from "./fit-data-source";
