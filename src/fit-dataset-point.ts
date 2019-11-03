@@ -4,13 +4,19 @@
 
 import { FitDataSourceId } from "./fit-data-source-id";
 import { FitDataTypeName } from "./fit-data-type-name";
+import { Long } from "./long";
+import { FitDatasetPointValue } from "./values";
 
 export interface IFitDatasetPoint {
     dataTypeName: FitDataTypeName;
-    endTimeNanos: string;
+    endTimeNanos: Long;
     originDataSourceId: FitDataSourceId;
-    startTimeNanos: string;
-    value: Array<{
-        fpVal: number, mapVal: any[],
-    }>;
+    startTimeNanos: Long;
+    value: FitDatasetPointValue[];
+    modifiedTimeMillis: Long;
+    rawTimestampNanos?: Long;
+    /**
+     * Don't use. Gets ignored
+     */
+    computationTimeMillis?: Long;
 }
