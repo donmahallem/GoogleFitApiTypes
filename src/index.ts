@@ -17,3 +17,4 @@ export * from "./fit-data-source-id";
 export * from "./fit-data-type-name";
 export * from "./fit-data-source";
 export * from "./fit-data-type";
+export * from "./fit-data-source-list-response";
