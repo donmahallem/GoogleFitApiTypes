@@ -2,14 +2,15 @@
  * Source https://github.com/donmahallem/GoogleFitApiTypes
  */
 
-import { DataSourceId } from "./data-source-id";
+import { FitDataSourceId } from "./fit-data-source-id";
 import { FitDataTypeName } from "./fit-data-type-name";
+import { Long } from "./long";
 import { IFpVal, IIntVal } from "./values";
 
 export interface ISubmitValue {
     dataTypeName: FitDataTypeName;
-    endTimeNanos: number;
-    startTimeNanos: number;
-    originDataSourceId: DataSourceId;
+    endTimeNanos: Long;
+    startTimeNanos: Long;
+    originDataSourceId: FitDataSourceId;
     value: IIntVal[] | IFpVal[];
 }
