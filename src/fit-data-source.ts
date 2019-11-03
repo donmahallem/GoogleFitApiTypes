@@ -24,3 +24,5 @@ export interface IFitDataSource {
         name: string,
     };
 }
+
+export type IFitCreateDataSourceRequest = Omit<IFitDataSource, "dataStreamId">;
