@@ -3,9 +3,10 @@
  */
 
 import { IFitDataset } from "./fit-dataset";
+import { IFitBaseVal } from "./values";
 
-export interface IFitBucket {
+export interface IFitBucket<T extends IFitBaseVal> {
     endTimeMillis: string;
     startTimeMillis: string;
-    dataset: IFitDataset[];
+    dataset: Array<IFitDataset<T>>;
 }
