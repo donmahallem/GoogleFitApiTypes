@@ -10,10 +10,10 @@ import { FitDatasetPointValue } from "./values";
 export interface IFitDatasetPoint {
     dataTypeName: FitDataTypeName;
     endTimeNanos: Long;
-    originDataSourceId: FitDataSourceId;
+    originDataSourceId?: FitDataSourceId;
     startTimeNanos: Long;
     value: FitDatasetPointValue[];
-    modifiedTimeMillis: Long;
+    modifiedTimeMillis?: Long;
     rawTimestampNanos?: Long;
     /**
      * Don't use. Gets ignored
