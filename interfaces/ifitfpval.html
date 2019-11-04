@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IStringVal | @donmahallem/google-fit-api-types</title>
+	<title>IFitFpVal | @donmahallem/google-fit-api-types</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="istringval.html">IStringVal</a>
+					<a href="ifitfpval.html">IFitFpVal</a>
 				</li>
 			</ul>
-			<h1>Interface IStringVal</h1>
+			<h1>Interface IFitFpVal</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IStringVal</span>
+						<a href="ifitbaseval.html" class="tsd-signature-type">IFitBaseVal</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">IFitFpVal</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -81,7 +86,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="istringval.html#stringval" class="tsd-kind-icon">string<wbr>Val</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ifitfpval.html#fpval" class="tsd-kind-icon">fp<wbr>Val</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ifitfpval.html#mapval" class="tsd-kind-icon">map<wbr>Val</a></li>
 							</ul>
 						</section>
 					</div>
@@ -90,12 +96,23 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="stringval" class="tsd-anchor"></a>
-					<h3>string<wbr>Val</h3>
-					<div class="tsd-signature tsd-kind-icon">string<wbr>Val<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="fpval" class="tsd-anchor"></a>
+					<h3>fp<wbr>Val</h3>
+					<div class="tsd-signature tsd-kind-icon">fp<wbr>Val<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/17e0a39/src/values.ts#L21">values.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/701a35a/src/values.ts#L13">values.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="mapval" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> map<wbr>Val</h3>
+					<div class="tsd-signature tsd-kind-icon">map<wbr>Val<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="ifitbaseval.html">IFitBaseVal</a>.<a href="ifitbaseval.html#mapval">mapVal</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/donmahallem/GoogleFitApiTypes/blob/701a35a/src/values.ts#L5">values.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -114,8 +131,8 @@
 					<li class=" tsd-kind-enum">
 						<a href="../enums/fitactivitytypes.html" class="tsd-kind-icon">Fit<wbr>Activity<wbr>Types</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
-						<a href="ibaseval.html" class="tsd-kind-icon">IBase<wbr>Val</a>
+					<li class=" tsd-kind-interface">
+						<a href="ifitbaseval.html" class="tsd-kind-icon">IFit<wbr>Base<wbr>Val</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="ifitbucket.html" class="tsd-kind-icon">IFit<wbr>Bucket</a>
@@ -127,6 +144,9 @@
 						<a href="ifitdatasource.html" class="tsd-kind-icon">IFit<wbr>Data<wbr>Source</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="ifitdatasourcelist.html" class="tsd-kind-icon">IFit<wbr>Data<wbr>Source<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="ifitdatatype.html" class="tsd-kind-icon">IFit<wbr>Data<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -135,6 +155,24 @@
 					<li class=" tsd-kind-interface">
 						<a href="ifitdatasetpoint.html" class="tsd-kind-icon">IFit<wbr>Dataset<wbr>Point</a>
 					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
+						<a href="ifitfpval.html" class="tsd-kind-icon">IFit<wbr>FpVal</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ifitfpval.html#fpval" class="tsd-kind-icon">fp<wbr>Val</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="ifitfpval.html#mapval" class="tsd-kind-icon">map<wbr>Val</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface">
+						<a href="ifitintval.html" class="tsd-kind-icon">IFit<wbr>Int<wbr>Val</a>
+					</li>
 					<li class=" tsd-kind-interface">
 						<a href="ifitsession.html" class="tsd-kind-icon">IFit<wbr>Session</a>
 					</li>
@@ -142,23 +180,8 @@
 						<a href="ifitsessionlistresponse.html" class="tsd-kind-icon">IFit<wbr>Session<wbr>List<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="ifpval.html" class="tsd-kind-icon">IFp<wbr>Val</a>
+						<a href="ifitstringval.html" class="tsd-kind-icon">IFit<wbr>String<wbr>Val</a>
 					</li>
-					<li class=" tsd-kind-interface">
-						<a href="iintval.html" class="tsd-kind-icon">IInt<wbr>Val</a>
-					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="istringval.html" class="tsd-kind-icon">IString<wbr>Val</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="istringval.html#stringval" class="tsd-kind-icon">string<wbr>Val</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="isubmittodatasetbody.html" class="tsd-kind-icon">ISubmit<wbr>ToDataset<wbr>Body</a>
 					</li>
