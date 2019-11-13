@@ -27,7 +27,7 @@
     },
     "description": "Api Types and helper for Google Fit Api",
     "devDependencies": {
-        "@types/chai": "~4.2.3",
+        "@types/chai": "~4.2.5",
         "@types/mocha": "~5.2.7",
         "@types/node": "~12.12.7",
         "@types/sinon": "~7.5.0",
