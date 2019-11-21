@@ -1,3 +1,4 @@
+name: Automatic Release Notes
 on:
   release:
     types: ['created']
