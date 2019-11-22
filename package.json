@@ -27,19 +27,19 @@
     },
     "description": "Api Types and helper for Google Fit Api",
     "devDependencies": {
-        "@types/chai": "~4.2.3",
+        "@types/chai": "~4.2.5",
         "@types/mocha": "~5.2.7",
-        "@types/node": "~12.12.5",
-        "@types/sinon": "~7.5.0",
+        "@types/node": "~12.12.11",
+        "@types/sinon": "~7.5.1",
         "chai": "~4.2.0",
         "mocha": "~6.2.1",
-        "nodemon": "~1.19.3",
+        "nodemon": "~2.0.0",
         "nyc": "~14.1.1",
         "sinon": "~7.5.0",
-        "ts-node": "~8.4.1",
-        "tslint": "~5.20.0",
-        "typedoc": "~0.15.0",
-        "typescript": "~3.6.4"
+        "ts-node": "~8.5.2",
+        "tslint": "~5.20.1",
+        "typedoc": "~0.15.2",
+        "typescript": "~3.7.2"
     },
     "engines": {
         "node": ">=8.0.0"
@@ -107,5 +107,5 @@
         "test:unit": "npm run test-ci"
     },
     "types": "dist/index.d.ts",
-    "version": "1.2.0"
+    "version": "1.2.1"
 }

@@ -4,6 +4,8 @@ node_js:
   - "10"
   - "stable"
 env:
+  global:
+  - COVERALLS_PARALLEL=true
   matrix:
   - TEST_SUITE=lint
   - TEST_SUITE=build
@@ -57,3 +59,5 @@ jobs:
       keep-history: true
       on:
         branch: master
+notifications:
+  webhooks: https://coveralls.io/webhook
