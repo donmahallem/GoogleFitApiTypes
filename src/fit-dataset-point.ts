@@ -5,14 +5,14 @@
 import { FitDataSourceId } from "./fit-data-source-id";
 import { FitDataTypeName } from "./fit-data-type-name";
 import { Long } from "./long";
-import { FitDatasetPointValue } from "./values";
+import { IFitBaseVal } from "./values";
 
-export interface IFitDatasetPoint {
+export interface IFitDatasetPoint<T extends IFitBaseVal> {
     dataTypeName: FitDataTypeName;
     endTimeNanos: Long;
     originDataSourceId?: FitDataSourceId;
     startTimeNanos: Long;
-    value: FitDatasetPointValue[];
+    value: T[];
     modifiedTimeMillis?: Long;
     rawTimestampNanos?: Long;
     /**

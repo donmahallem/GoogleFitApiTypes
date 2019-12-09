@@ -13,7 +13,7 @@ import { IFitBaseVal } from "./values";
  */
 export interface IFitDataset<T extends IFitBaseVal> {
     dataSourceId: FitDataSourceId;
-    point: T[];
+    point: Array<IFitDatasetPoint<T>>;
     maxEndTimeNs: Long;
     minStartTimeNs: Long;
     nextPageToken?: string;
