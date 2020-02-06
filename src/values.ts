@@ -2,12 +2,12 @@
  * Source https://github.com/donmahallem/GoogleFitApiTypes
  */
 export interface IFitBaseVal {
-    mapVal?: Array<{
+    mapVal?: {
         key: string;
         value: {
             fpVal: number;
         }
-    }>;
+    }[];
 }
 export interface IFitFpVal extends IFitBaseVal {
     fpVal: number;
