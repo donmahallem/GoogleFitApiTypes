@@ -23,7 +23,7 @@
         "target": "es5"
     },
     "dependencies": {
-        "jsonschema": "~1.2.5"
+        "jsonschema": "~1.2.6"
     },
     "description": "Api Types and helper for Google Fit Api",
     "devDependencies": {
